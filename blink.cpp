@@ -1,15 +1,14 @@
-// Do not remove the include below
 #include "blink.h"
 
+int led = 13;
 
-//The setup function is called once at startup of the sketch
-void setup()
-{
-// Add your initialization code here
+void setup() {
+	pinMode(led, OUTPUT);
 }
 
-// The loop function is called in an endless loop
-void loop()
-{
-//Add your repeated code here
+void loop() {
+	digitalWrite(led, HIGH);
+	delay(1000);
+	digitalWrite(led, LOW);
+	delay(1000);
 }
